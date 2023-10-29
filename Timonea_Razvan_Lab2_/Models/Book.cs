@@ -21,5 +21,6 @@ namespace Timonea_Razvan_Lab2_.Models
         public int? PublisherID { get; set; }
         public Publisher? Publisher { get; set; }
 
+        public ICollection<BookCategory>? BookCategories { get; set; }
     }
 }

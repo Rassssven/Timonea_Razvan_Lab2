@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Timonea_Razvan_Lab2_.Data;
 
@@ -11,9 +12,10 @@ using Timonea_Razvan_Lab2_.Data;
 namespace Timonea_Razvan_Lab2_.Migrations
 {
     [DbContext(typeof(Timonea_Razvan_Lab2_Context))]
-    partial class Timonea_Razvan_Lab2_ContextModelSnapshot : ModelSnapshot
+    [Migration("20231029194704_BookCategory")]
+    partial class BookCategory
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

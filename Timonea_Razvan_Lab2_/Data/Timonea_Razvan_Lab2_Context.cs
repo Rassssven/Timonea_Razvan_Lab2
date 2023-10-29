@@ -17,5 +17,7 @@ namespace Timonea_Razvan_Lab2_.Data
         public DbSet<Timonea_Razvan_Lab2_.Models.Book> Book { get; set; } = default!;
 
         public DbSet<Timonea_Razvan_Lab2_.Models.Publisher>? Publisher { get; set; }
+
+        public DbSet<Timonea_Razvan_Lab2_.Models.Category>? Category { get; set; }
     }
 }
